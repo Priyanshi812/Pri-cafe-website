@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>resrv</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assests/images/fav.ico" rel="icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="assests/css/styles.css" type="text/css" rel="stylesheet"/>
+  <link href="assests/css/reservation.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo"><img src="assests/images/logo.png" alt="logo"></a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="home.html" class="nav__link"><i class="fa-solid fa-mug-hot"></i><span>Home</span></a></li>
+          <li class="nav__item"><a href="gallery.html" class="nav__link"><i class="fa-solid fa-cookie-bite"></i><span>Gallery</span></a></li>
+          <li class="nav__item"><a href="menu.html" class="nav__link"><i class="fa-solid fa-stroopwafel"></i><span>Menu</span></a></li>
+          <li class="nav__item"><a href="aboutus.html" class="nav__link"><i class="fa-solid fa-stroopwafel"></i><span>About us</span></a></li>
+          <li class="nav__item"><a href="reservation.html" class="nav__link" id="reservation"><i class="fa-solid fa-stroopwafel"></i><span>Reservation</span></a></li>
+          <li class="nav__item"><a href="contactus.html" class="nav__link"><i class="fa-solid fa-ice-cream"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav__close" id="nav-close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle"><i class="fa-solid fa-bars-progress"></i></div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-title1">
+      <h1>Reservation</h1>
+  </div>
+    <div class="reservation-content">
+      
+      <div class="reservation-form">
+        
+        <form>
+          <div class="form-row">
+            <input type="date" name="date" placeholder="Select date" required />
+            <input type="time" name="time" placeholder="Time" required />
+          </div>
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+          </div>
+         
+          <div class="form-row">
+            <input type="number" name="members" placeholder="How many members" min="1" required />
+            <input type="email" name="email" placeholder="email" required />
+            <input type="submit" value="Book Now" />
+          </div>
+        </form>
+      </div>
+      <div class="reservation-image">
+        <img src="assests/gall-img/img19.jpg" alt="Reservation Image" />
+      
+        
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assests/script/scripts.js"></script>
+
+  <footer class="footer">
+    <div class="contain">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Chef</a></li>
+            <li><a href="#">Authenticity</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Shop Online</a></li>
+            <li><a href="#">Difference</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Wi-fi</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Rest</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

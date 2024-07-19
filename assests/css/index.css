@@ -1,0 +1,117 @@
+.photo{
+    background-color: 
+    #E5DDC5;
+    display: flex;
+    padding: 100px;
+  }
+  .photo-element h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-right: 100px;
+    color: #43766C;
+  }
+  .photo-element p{
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    color: #43766C;
+  }
+  .photo-element a{
+    color: #43766C;
+  }
+  .photo img{
+    width: 440px;
+    height: 440px;
+    border-radius: 10px;
+  }
+  .content h1 {
+    color:#FBF3D5;
+    font-size: 160px;
+    margin-top: 50px;
+  }
+  .content p{
+    font-size: 30px;
+    color:#FBF3D5;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-image: url('slide1.jpg');
+    }
+    20% {
+      background-image: url('slide2.jpg');
+    }
+    40% {
+      background-image: url('slide3.jpg');
+    }
+    60% {
+      background-image: url('slide4.jpg');
+    }
+    80% {
+      background-image: url('slide1.jpg');
+    }
+    100% {
+      background-image: url('slide2.jpg');
+    }
+  }
+  
+  /* Slideshow CSS */
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: slideAnimation 16s infinite;
+  }
+  .slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .slide:nth-child(2) {
+    animation-delay: 4s;
+  }
+  .slide:nth-child(3) {
+    animation-delay: 8s;
+  }
+  .slide:nth-child(4) {
+    animation-delay: 12s;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+  @keyframes slideAnimation {
+    0%, 25% {
+      opacity: 1;
+    }
+    30%, 100% {
+      opacity: 0;
+    }
+  }
+    

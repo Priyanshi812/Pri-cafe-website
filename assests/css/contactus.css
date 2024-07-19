@@ -1,0 +1,282 @@
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fbf3d5;
+    color: black;
+}
+
+.contact .content1 {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content1 h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.contact .content1 p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.conteiner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.conteiner .contcact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.conteiner .contcact-info .box {
+    display: flex;
+    padding: 30px;
+}
+
+.conteiner .contcact-info .box .icons {
+    min-width: 60px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 32px;
+    color: white;
+}
+
+.conteiner .contcact-info .box .text {
+    margin-left: 20px;
+    font-size: 19px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.cont-form h2 {
+    font-size: 32px;
+    color: black;
+    font-weight: 700;
+}
+
+.cont-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contact {
+    background-color: #936846;
+    color: #fbf3d5;
+    border-radius: 3px;
+}
+
+.cont-form .input-box input,
+.cont-form .input-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+.cont-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.cont-form .input-box input:focus ~ span,
+.cont-form .input-box input:valid ~ span,
+.cont-form .input-box textarea:focus ~ span,
+.cont-form .input-box textarea:valid ~ span {
+    color: black;
+    font-size: 13px;
+    transform: translateY(-20px);
+}
+
+.cont-form .input-box input[type="submit"] {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.cont-form .input-box input[type="submit"]:hover {
+    background: #8e7a5a;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 30px 20px;
+    }
+
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner .contcact-info {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .cont-form {
+        width: 100%;
+    }
+
+    .contact .content1 h2 {
+        font-size: 32px;
+    }
+
+    .contact .content1 p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 20px 10px;
+    }
+
+    .conteiner .contcact-info,
+    .cont-form {
+        padding: 20px 10px;
+    }
+
+    .contact .content1 h2 {
+        font-size: 28px;
+    }
+
+    .contact .content1 p {
+        font-size: 16px;
+    }
+
+    .cont-form h2 {
+        font-size: 28px;
+    }
+
+    .cont-form .input-box input,
+    .cont-form .input-box textarea {
+        font-size: 14px;
+    }
+
+    .cont-form .input-box span {
+        font-size: 14px;
+    }
+
+    .cont-form .input-box input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact {
+        padding: 10px 5px;
+    }
+
+    .conteiner .contcact-info,
+    .cont-form {
+        padding: 10px 5px;
+    }
+
+    .contact .content1 h2 {
+        font-size: 24px;
+    }
+
+    .contact .content1 p {
+        font-size: 13px;
+    }
+
+    .cont-form h2 {
+        font-size: 24px;
+    }
+
+    .cont-form .input-box input,
+    .cont-form .input-box textarea {
+        font-size: 13px;
+    }
+
+    .cont-form .input-box span {
+        font-size: 13px;
+    }
+
+    .cont-form .input-box input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact {
+        padding: 50px 200px;
+    }
+
+    .conteiner .contcact-info,
+    .cont-form {
+        max-width: 600px;
+    }
+
+    .contact .content1 h2 {
+        font-size: 48px;
+    }
+
+    .contact .content1 p {
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contact {
+        padding: 50px 300px;
+    }
+
+    .conteiner {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .conteiner .contcact-info,
+    .cont-form {
+        max-width: 700px;
+    }
+
+    .contact .content1 h2 {
+        font-size: 56px;
+    }
+
+    .contact .content1 p {
+        font-size: 32px;
+    }
+}
